@@ -1,0 +1,17 @@
+package com.epam.jdd_demo;
+
+public class SwapLast2Chars {
+
+	public String swap(String string) {
+		int len = string.length();
+		if(len == 1)
+			return string;
+		char secondlst = string.charAt(len - 1);
+		char lst = string.charAt(len - 2);
+		String result = string.substring(0, len - 2);
+		return result +secondlst+lst;
+	}
+	
+	
+
+}

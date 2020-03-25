@@ -1,0 +1,51 @@
+package com.epam.jdd_demo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+
+public class SwapLast2CharTest {
+//	TO DO LIST FOR MY FEATURE
+//1. 2 chars AB => BA
+//2. 4 chars ABCD => ABDC
+//3. N CHARS ASDGJJDIFNXIGDBDKD => ASDGJJDIFNXIGDBDDK	
+//4. 1 char A => A	
+//5. empty char ""=> ""	
+	SwapLast2Chars obj;
+	
+	@BeforeEach
+	void setUp() {
+		obj = new SwapLast2Chars();
+	}
+	
+	@Test
+	public void test2Chars() {
+		String actual = obj.swap("AB");
+		assertEquals("BA", actual);
+	}
+	
+	@Test
+	public void test4Chars() {
+		String actual = obj.swap("ABCD");
+		assertEquals("ABDC", actual);
+	}
+	
+	@Test
+	public void testNChars() {
+		String actual = obj.swap("ASDGJJDIFNXIGDBDKD");
+		assertEquals("ASDGJJDIFNXIGDBDDK", actual);
+	}
+	
+	@Test
+	public void test1Chars() {
+		String actual = obj.swap("A");
+		assertEquals("A", actual);
+	}
+	@Test
+	public void test0Chars() {
+		String actual = obj.swap("");
+		assertEquals("", actual);
+	}
+
+}

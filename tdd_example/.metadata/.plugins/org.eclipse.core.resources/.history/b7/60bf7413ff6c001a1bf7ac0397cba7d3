@@ -1,0 +1,5 @@
+package com.epam.tdd_demo;
+
+public class RemoveFirst2Chars {
+
+}

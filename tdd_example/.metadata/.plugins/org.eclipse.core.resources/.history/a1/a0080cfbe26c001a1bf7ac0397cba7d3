@@ -1,0 +1,11 @@
+package com.epam.jdd_demo;
+
+public class SwapLast2Chars {
+
+	public String swap(String string) {
+		return null;
+	}
+	
+	
+
+}

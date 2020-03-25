@@ -1,0 +1,16 @@
+package com.epam.tdd_demo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class RemoveCharsTest {
+
+	@Test
+	public void test2chars() {
+		RemoveFirst2Chars obj = new RemoveFirst2Chars();
+		String actual = obj.remove("AB");
+		assertEquals("B", actual);  
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.epam.jdd_demo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SwapLast2CharTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
